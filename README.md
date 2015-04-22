@@ -11,8 +11,6 @@ a2enmod rewrite headers
 php5enmod mcrypt
 
 vi /etc/apache2/sites-enabled/000-default.conf
-
-vi /etc/apache2/sites-enabled/000-default.conf
 --ADD LINE-- 
 Include /etc/phpmyadmin/apache.conf
 
@@ -28,8 +26,6 @@ Include /etc/phpmyadmin/apache.conf
                 Allow from all
         </Directory>
 </VirtualHost>
-
-service apache2 restart
 
 vi /etc/phpmyadmin/config.inc.php
 --ADD LINES BELOW THE PMA CONFIG AREA AND FILL IN DETAILS--
