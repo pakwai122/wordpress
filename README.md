@@ -12,6 +12,12 @@ php5enmod mcrypt
 
 vi /etc/apache2/sites-enabled/000-default.conf
 
+vi /etc/apache2/sites-enabled/000-default.conf
+--ADD LINE-- 
+Include /etc/phpmyadmin/apache.conf
+
+service apache2 restart
+
 <VirtualHost *:80>
         #ServerName example.com
         #ServerAlias www.example.com
