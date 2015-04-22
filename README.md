@@ -16,8 +16,6 @@ vi /etc/apache2/sites-enabled/000-default.conf
 --ADD LINE-- 
 Include /etc/phpmyadmin/apache.conf
 
-service apache2 restart
-
 <VirtualHost *:80>
         #ServerName example.com
         #ServerAlias www.example.com
@@ -30,6 +28,8 @@ service apache2 restart
                 Allow from all
         </Directory>
 </VirtualHost>
+
+service apache2 restart
 
 vi /etc/phpmyadmin/config.inc.php
 --ADD LINES BELOW THE PMA CONFIG AREA AND FILL IN DETAILS--
