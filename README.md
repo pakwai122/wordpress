@@ -49,6 +49,9 @@ git clone https://github.com/pakwai122/wordpress.git .
 chmod -R 744 .
 chown -R www-data:www-data .
 
+edit php upload size and post size
+vi /etc/php5/apache2/php.ini
+
 service apache2 restart
 ```
 After Wordpress Is Configured
