@@ -17,9 +17,9 @@ Include /etc/phpmyadmin/apache.conf
 <VirtualHost *:80>
         #ServerName example.com
         #ServerAlias www.example.com
-        DocumentRoot /var/www/staging
+        DocumentRoot /var/www/html
 
-        <Directory /var/www/staging>
+        <Directory /var/www/html>
                 Options -Indexes
                 AllowOverride All
                 Order allow,deny
