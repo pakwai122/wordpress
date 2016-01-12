@@ -46,6 +46,7 @@ cd ../
 mkdir staging
 cd staging
 git clone https://github.com/pakwai122/wordpress.git .
+wget https://wordpress.org/latest.zip
 chmod -R 744 .
 chown -R www-data:www-data .
 
