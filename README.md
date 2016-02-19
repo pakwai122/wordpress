@@ -47,7 +47,7 @@ mkdir staging
 cd staging
 git clone https://github.com/pakwai122/wordpress.git .
 wget https://wordpress.org/latest.zip
-chmod -R 744 .
+chmod -R 755 .
 chown -R www-data:www-data .
 
 edit php upload size and post size
